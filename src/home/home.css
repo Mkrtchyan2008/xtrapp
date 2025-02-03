@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sec_1 {
+    background-image: url("https://xtratheme.com/elementor/app-2/wp-content/uploads/sites/107/2023/04/BACK1-APP.jpg");
+    min-height: 100vh;
+    position: relative;
+
+    & .contents {
+        display: flex;
+        gap: 60px;
+
+        & .content_1 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding-top: 120px;
+
+            & .main_text {
+                width: 600px;
+
+                & h1 {
+                    font-size: 65px;
+                }
+
+                & .txt-2 {
+                    color: #0063f5;
+                }
+            }
+
+            & p {
+                font-size: 18px;
+                width: 500px;
+                letter-spacing: 1px;
+                color: rgba(0, 0, 0, 0.405);
+            }
+
+            & .contex-1 {
+                display: flex;
+                gap: 20px;
+
+                & .btn {
+                    font-size: 20px;
+                    text-decoration: none;
+                    padding: 15px;
+                    border-radius: 15px;
+                }
+
+                & .btn-1 {
+                    background-color: #0063f5;
+                    color: white;
+                    font-weight: 600;
+                }
+
+                & .btn-1:hover {
+                    background-color: rgb(255, 183, 0);
+                    color: black;
+                    transition: .8s;
+                }
+
+                & .btn-2 {
+                    color: black;
+                    font-weight: 600;
+                    border: 1px double #75acff;
+                }
+
+                & .btn-2:hover {
+                    transition: .8s;
+                    border: 1px double rgb(255, 183, 0);
+                }
+            }
+
+            & .contex-2 {
+                display: flex;
+                gap: 10px;
+                background-color: #dae9ff;
+                padding: 10px;
+                width: 250px;
+                border-radius: 20px;
+
+                & h4 {
+                    color: rgba(0, 0, 0, 0.573);
+                    font-size: 20px;
+                    padding-top: 3px;
+                }
+
+                & .logos {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 28px;
+                    cursor: pointer;
+
+                    & .window:hover {
+                        transition: .8s;
+                        color: #0063f5;
+                    }
+
+                    & .android:hover {
+                        transition: .8s;
+                        color: rgb(0, 168, 0);
+                    }
+
+                    & .apple:hover {
+                        transition: .8s;
+                        color: black;
+                    }
+
+                    & i {
+                        color: rgba(0, 0, 0, 0.614);
+                    }
+
+                }
+            }
+
+        }
+
+        & .content_2 {
+            padding-top: 50px;
+
+            img {
+                height: 600px;
+                width: 600px;
+
+            }
+
+        }
+
+
+
+    }
+
+}
+
+.big_logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+}
+
+.logos-wrapper {
+    display: flex;
+    width: 200%;
+}
+
+.logos {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.logos img {
+    width: 120px;
+    margin: 0 20px;
+    transition: transform 0.3s;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Sec_1 Animate */
+
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.content_1 {
+    animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.content_2 {
+    animation: fadeInRight 1.2s ease-in-out;
+}
+
+
+nav a {
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #0063f5;
+    transform: scale(1.1);
+}
+
+
+.btn {
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+.logos img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logos img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+
+/* /////// */
+
+.sec_2 {
+    background-image: url("https://xtratheme.com/elementor/app-2/wp-content/uploads/sites/107/2023/04/back3.jpg");
+    min-height: 100vh;
+
+    & .contents {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & h3 {
+            font-size: 45px;
+        }
+        
+
+    }
+ 
+}

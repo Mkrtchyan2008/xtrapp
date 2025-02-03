@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+.Abouth-sec-1{
+    min-height: 100vh;
+    & .contents{
+        display: flex;
+        gap: 10rem;
+        padding-top: 100px;
+        & .content-1{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            & h3{
+                font-size: 50px;
+                color:#0063f5;
+            }
+            p{
+                font-size: 20px;
+                letter-spacing: 1px;
+                color: rgba(0, 0, 0, 0.501);
+            }
+           & .items{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+                & .item{
+                    display: flex;
+                    gap: 10px;
+                    
+                    & i{
+                        color: #0063f5;
+                    }
+           }
+           & .item-1{
+            
+           }
+           }
+        }
+        & .content-2 img{
+            height: 500px;
+            width: 500px;
+        }
+    }
+}
