@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+.Pricing_sec_1{
+    min-height: 100vh;
+    & .content-1{
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        margin: auto;
+        padding-top: 60px;
+        & .main-text{
+            display: flex;
+            gap: 12px;
+            font-size: 33px;
+            & .text-2{
+                color: #0063f5;
+            }
+            & .text-1{
+                color: #182c4b;
+            }
+            
+        }
+        & .items{
+            display: flex;
+            gap: 40px;
+            
+            & .item{
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                cursor: pointer;
+                & i{
+                    background-color: #0063f5;
+                    color: white;
+                    font-size: 40px;
+                    padding: 20px;
+                    border-radius: 20px;
+                }
+                & h3{
+                    font-size: 23px;
+                    color: #182c4b;
+
+                }
+                & p{
+                    letter-spacing: 2px;
+                    display: flex;
+                    padding-left: 20px;
+                    width: 280px;
+                    color: rgba(0, 0, 0, 0.614);
+                    
+                
+                }
+            } 
+            & .item:hover{
+                margin-top: -50px;
+                transition: .8s;
+                & i{
+                    background-color: rgb(255, 170, 0);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  
+                }
+                & h3{
+                    color: #0063f5;
+                }
+            }
+        }
+    } 
+}
+
+.Pricing_sec_2{
+    min-height: 100vh;
+    & .content{
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        padding-top: 100px;
+        & h2{
+            font-size: 50px;
+            color: #001f4d;
+        }
+        & .items{
+            display: flex;
+            gap: 30px;
+            & .item{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                & .btn-1{
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    background-color: white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    color: #0063f5;
+                    border: 1px double #0063f5;
+                }
+                & .btn-2{
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    background-color: white;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    color: black;
+                    border: 1px double rgb(255, 170, 0);
+                }
+                & .money{
+                    & h3{
+                        font-size: 40px;
+                        color: #001f4d;
+                    }
+                    p{
+                        color: rgba(0, 0, 0, 0.616);
+                    }
+                }
+                & .text{
+                    letter-spacing: 1px;
+                    width: 300px;
+                    color: rgba(0, 0, 0, 0.51);
+                }
+                & .contex{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        & .contex-1{
+                            display: flex;
+                            gap: 10px;
+                            margin: auto;
+                            & i{
+                                font-size: 40px;
+                                color: #0063f5;
+                            }
+                            & p{
+                                font-size: 18px;
+                            }
+                        }   
+                        & .contex-2{
+                            display: flex;
+                            gap: 10px;
+                        }       
+                }
+            }
+        }
+
+    }
+}
